@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/CLion/COMP3522/GeneticAlgorithm/city.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/CLion/COMP3522/GeneticAlgorithm/city.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/CLion/COMP3522/GeneticAlgorithm/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
