@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GeneticAlgorithm.dir/city.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/main.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.o"
   "GeneticAlgorithm.exe"
   "GeneticAlgorithm.pdb"
   "libGeneticAlgorithm.dll.a"

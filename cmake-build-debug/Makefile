@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/houma/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Houman/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/houma/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Houman/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/CLion/COMP3522/GeneticAlgorithm
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/CLion/COMP3522/GeneticAlgorithm/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/d/CLion/COMP3522/GeneticAlgorithm/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/houma/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Houman/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/houma/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Houman/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/CLion/COMP3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles /cygdrive/d/CLion/COMP3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/CLion/COMP3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,33 +123,6 @@ GeneticAlgorithm/fast:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/build
 .PHONY : GeneticAlgorithm/fast
 
-city.o: city.cpp.o
-
-.PHONY : city.o
-
-# target to build an object file
-city.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.o
-.PHONY : city.cpp.o
-
-city.i: city.cpp.i
-
-.PHONY : city.i
-
-# target to preprocess a source file
-city.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.i
-.PHONY : city.cpp.i
-
-city.s: city.cpp.s
-
-.PHONY : city.s
-
-# target to generate assembly for a file
-city.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/city.cpp.s
-.PHONY : city.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tour_manager.o: tour_manager.cpp.o
+
+.PHONY : tour_manager.o
+
+# target to build an object file
+tour_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.o
+.PHONY : tour_manager.cpp.o
+
+tour_manager.i: tour_manager.cpp.i
+
+.PHONY : tour_manager.i
+
+# target to preprocess a source file
+tour_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.i
+.PHONY : tour_manager.cpp.i
+
+tour_manager.s: tour_manager.cpp.s
+
+.PHONY : tour_manager.s
+
+# target to generate assembly for a file
+tour_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.s
+.PHONY : tour_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... GeneticAlgorithm"
 	@echo "... edit_cache"
-	@echo "... city.o"
-	@echo "... city.i"
-	@echo "... city.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tour_manager.o"
+	@echo "... tour_manager.i"
+	@echo "... tour_manager.s"
 .PHONY : help
 
 
