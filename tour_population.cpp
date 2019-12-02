@@ -23,15 +23,43 @@ tour_population::~tour_population() {
 }
 
 void tour_population::genetic_algorithm() {
+    //moving elite tour to top of population
     create_elite();
 
+    //parents of size NUMBER_OF_PARENTS
     vector<tour*> parents;
 
-    for(int i = 0; i < NUMBER_OF_PARENTS; ++i) {
-        vector<tour *> parent_pool = populate_parent_pool();
-        parents.push_back(find_fittest_parent(parent_pool));
-    }
+    //for each tour that is none elite, we will be creating new tours by crossing fit parents from random parent pools
+    for(int num_of_non_elites = NUMBER_OF_ELITES; num_of_non_elites < population.size() - 1; ++num_of_non_elites) {
 
+        //finding NUMBER_OF_PARENTS most fit parents from random parent pools of size PARENT_POOL_SIZE
+        for (int i = 0; i < NUMBER_OF_PARENTS; ++i) {
+            vector<tour *> parent_pool = populate_parent_pool();
+            parents.push_back(find_fittest_parent(parent_pool));
+        }
+
+        //choosing a random index for crossover
+        random_device rd;
+        mt19937 iGenerator(rd());
+        uniform_int_distribution<> iDistribution(0, parents.at(0)->get_tour().size() - 1);
+        int rand_index = iDistribution(iGenerator);
+
+        //creating a new list of cities from crossing parents
+        vector<city*> crossed_list;
+
+        //using cities upto random index of parent 1
+        for (int i = 0; i < rand_index; ++i)
+            crossed_list.push_back(parents.at(0)->get_tour().at(i));
+
+        //using cities from random index of parent 2
+        for (int i = rand_index; i < parents.at(1)->get_tour().size(); ++i)
+            crossed_list.push_back(parents.at(1)->get_tour().at(i));
+
+        //adding the new crossed tour to population and deleting old one
+        tour* old = population.at(num_of_non_elites);
+        population.at(num_of_non_elites) = new tour(crossed_list);
+        delete(old);
+    }
 }
 
 void tour_population::create_elite(){
