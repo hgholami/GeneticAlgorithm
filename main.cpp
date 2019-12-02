@@ -1,6 +1,6 @@
-#include <vector>
-#include <random>
+#pragma once
 #include "city.hpp"
+#include "tour_population.hpp"
 
 int main() {
     //List of unique city names

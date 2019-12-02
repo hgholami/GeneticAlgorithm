@@ -86,10 +86,10 @@
 		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/tour_manager.cpp">
+		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/tour_population.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/tour_manager.hpp">
+		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/tour_population.hpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Houman/CLion/COMP-3522/GeneticAlgorithm/CMakeLists.txt">

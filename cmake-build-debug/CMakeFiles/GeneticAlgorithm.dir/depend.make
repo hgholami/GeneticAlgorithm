@@ -4,6 +4,6 @@
 CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../city.hpp
 CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../main.cpp
 
-CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.o: ../tour_manager.cpp
-CMakeFiles/GeneticAlgorithm.dir/tour_manager.cpp.o: ../tour_manager.hpp
+CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../tour_population.cpp
+CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../tour_population.hpp
 

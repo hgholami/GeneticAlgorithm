@@ -3,4 +3,4 @@ project(GeneticAlgorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(GeneticAlgorithm main.cpp city.hpp tour_manager.cpp tour_manager.hpp)
+add_executable(GeneticAlgorithm main.cpp city.hpp tour_population.cpp tour_population.hpp)
