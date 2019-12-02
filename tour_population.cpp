@@ -23,6 +23,11 @@ tour_population::~tour_population() {
 }
 
 void tour_population::genetic_algorithm() {
+    create_elite();
+
+}
+
+void tour_population::create_elite(){
     auto iterator = find(population.begin(), population.end(), fittest_tour);
     if(iterator != population.end())
         population.erase(iterator);

@@ -6,7 +6,7 @@
 #include "tour.hpp"
 
 //size of population in this tour
-#define POP_SIZE 5
+#define POP_SIZE 32
 
 //number of elite tours
 #define NUMBER_OF_ELITES 1
@@ -43,4 +43,11 @@ public:
      * The genetic algorithm calculating the best route
      */
     void genetic_algorithm();
+
+private:
+    /*
+     * Helper class for genetic algorithm
+     * moves the elite class to the first position of the population
+     */
+    void create_elite();
 };
