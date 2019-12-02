@@ -3,7 +3,9 @@ Name: Houman Gholami
 Student ID: A01042529
 Set: 3B
 
-Percentage complete: 60%
+Percentage complete: 65%
+Currently on step 8 of assignment:
+
 City and Tour classes have been fully implemented.
 
 Cities hold their name and coordinates.
