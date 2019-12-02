@@ -8,12 +8,17 @@
 #include <random>
 #include "city.hpp"
 
+#define SCALAR 10000
+
 /*
  * Class representing a tour of cities
  */
 struct tour {
     //tour of cities
     vector<city*> cities;
+
+    //represents the quality of the tour
+    double fitness;
 
     /*
      * Constructor
@@ -22,6 +27,7 @@ struct tour {
      */
     tour(vector<city*> cities) : cities(cities){
         random_shuffle(begin(this->cities), end(this->cities));
+        calculate_fitness();
     };
 
     /*
@@ -29,4 +35,10 @@ struct tour {
      * Frees memory used for each city
      */
     ~tour(){};
+
+private:
+    /*
+     * Calculates the fitness of this tour
+     */
+    void calculate_fitness();
 };

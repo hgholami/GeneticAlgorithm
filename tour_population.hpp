@@ -14,6 +14,9 @@ struct tour_population {
     //List of all tours
     vector<tour*> population;
 
+    //the shortest tour
+    tour* fittest_tour;
+
     /*
      * Constructor
      * Creates tours containing randomly shuffled list of cities
