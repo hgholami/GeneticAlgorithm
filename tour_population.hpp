@@ -8,6 +8,9 @@
 //size of population in this tour
 #define POP_SIZE 5
 
+//number of elite tours
+#define NUMBER_OF_ELITES 1
+
 /*
  * Class representing a population of tours of cities
  */
