@@ -10,13 +10,14 @@
 /*
  * Class representing a population of tours of cities
  */
-struct tour_population {
+class tour_population {
     //List of all tours
     vector<tour*> population;
 
     //the shortest tour
     tour* fittest_tour;
 
+public:
     /*
      * Constructor
      * Creates tours containing randomly shuffled list of cities
@@ -29,4 +30,6 @@ struct tour_population {
      * Deletes memory used for each tour
      */
     ~tour_population();
+
+
 };

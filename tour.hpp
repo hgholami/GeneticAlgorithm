@@ -13,13 +13,14 @@
 /*
  * Class representing a tour of cities
  */
-struct tour {
+class tour {
     //tour of cities
     vector<city*> cities;
 
     //represents the quality of the tour
     double fitness;
 
+public:
     /*
      * Constructor
      * Accepts a list of cities and creates a tour with a random order
@@ -35,6 +36,18 @@ struct tour {
      * Frees memory used for each city
      */
     ~tour(){};
+
+    /*
+     * Getter method for the tour of cities
+     * @return - the list of cities contained in this tour
+     */
+    vector<city*> get_tour(){return cities;};
+
+    /*
+     * Getter method for the fitness of this tour
+     * @return - the fitness of this tour
+     */
+    double get_fitness(){return fitness;};
 
 private:
     /*

@@ -19,10 +19,6 @@ int main() {
         cities.push_back(new city{c, iDistribution(iGenerator), iDistribution(iGenerator)});
     }
 
-//    for(city* c: cities)
-//        cout << c->getName() << " (" << c->getX() << "," << c->getY() << ")" << endl;
-//    cout << endl;
-
     //creating a population of 5 tours
     tour_population pop = tour_population{cities};
 
