@@ -3,9 +3,7 @@
 //
 
 #pragma once
-#include <vector>
-#include <random>
-#include "city.hpp"
+#include "tour.hpp"
 
 #define POP_SIZE 5
 

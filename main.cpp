@@ -1,7 +1,9 @@
-#pragma once
 #include "city.hpp"
 #include "tour_population.hpp"
 
+/*
+ * Main method driving the program
+ */
 int main() {
     //List of unique city names
     string cityNames[] = {"Vancouver", "Victoria", "Toronto", "Ottawa", "New York", "Los Angeles", "Seattle", "Austin", "Boston", "Paris", "London", "Barcelona", "Tehran", "Cape Town"};
@@ -17,9 +19,14 @@ int main() {
         cities.push_back(new city{c, iDistribution(iGenerator), iDistribution(iGenerator)});
     }
 
-    for(city* c: cities)
-        cout << c->getName() << " (" << c->getX() << "," << c->getY() << ")" << endl;
+//    for(city* c: cities)
+//        cout << c->getName() << " (" << c->getX() << "," << c->getY() << ")" << endl;
+//    cout << endl;
 
+    //creating a population of 5 tours
+    tour_population pop = tour_population{cities};
+
+    //freeing memory holding the list of cities
     for(city* c: cities)
         delete(c);
     return 0;

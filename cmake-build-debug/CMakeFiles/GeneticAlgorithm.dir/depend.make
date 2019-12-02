@@ -3,7 +3,15 @@
 
 CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../city.hpp
 CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../main.cpp
+CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../tour.hpp
+CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../tour_population.hpp
 
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../city.hpp
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../tour.cpp
+CMakeFiles/GeneticAlgorithm.dir/tour.cpp.o: ../tour.hpp
+
+CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../city.hpp
+CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../tour.hpp
 CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../tour_population.cpp
 CMakeFiles/GeneticAlgorithm.dir/tour_population.cpp.o: ../tour_population.hpp
 
