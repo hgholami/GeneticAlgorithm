@@ -8,7 +8,8 @@
 #include <random>
 #include "city.hpp"
 
-#define SCALAR 10000
+//used for calculating fitness
+#define SCALAR 100000
 
 /*
  * Class representing a tour of cities

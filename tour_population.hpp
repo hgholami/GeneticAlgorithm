@@ -5,6 +5,7 @@
 #pragma once
 #include "tour.hpp"
 
+//size of population in this tour
 #define POP_SIZE 5
 
 /*
@@ -17,10 +18,14 @@ class tour_population {
     //the shortest tour
     tour* fittest_tour;
 
+    //starting distance
+    double base_distance;
+
 public:
     /*
      * Constructor
      * Creates tours containing randomly shuffled list of cities
+     * initializes the starting distance
      * @param - cities: The list of cities to be used to populate tours
      */
     tour_population(vector<city*> cities);
@@ -31,5 +36,8 @@ public:
      */
     ~tour_population();
 
-
+    /*
+     * The genetic algorithm calculating the best route
+     */
+    void genetic_algorithm();
 };

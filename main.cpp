@@ -22,6 +22,9 @@ int main() {
     //creating a population of 5 tours
     tour_population pop = tour_population{cities};
 
+    //Calculating the best path using the genetic algorithm
+    pop.genetic_algorithm();
+
     //freeing memory holding the list of cities
     for(city* c: cities)
         delete(c);
